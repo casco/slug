@@ -1,5 +1,5 @@
 #! /bin/sh
-CLASSPATH=slug.jar
+CLASSPATH=build/slug.jar
 for i in `ls ./lib/*.jar`
 do
   CLASSPATH=${CLASSPATH}:${i}

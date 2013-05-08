@@ -88,7 +88,7 @@ public class Scutter implements Runnable
 	    Model plan = ModelFactory.createDefaultModel();
 	    logger.finer("Reading scutter plan");
 	    //FIXME other formats    
-	    FileManager.get().readModel(plan, scutterPlan, "TURTLE");
+	    FileManager.get().readModel(plan, scutterPlan, "RDF/XML");
 	    
 	    //get all seeAlso links from scutter plan, and add to work plan
 	    getSeeAlsoAsTasks(plan, tasks);
